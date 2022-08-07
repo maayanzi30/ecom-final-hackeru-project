@@ -7,19 +7,19 @@ const About = () => {
     <>
       <h1>About eCom</h1>
       <section className={styles.section}>
-        <div class="about_aboutCon__GhE1u">
-          <h3 class="about_h3Title__eC9Ge">About me:</h3>
-          <ul class="about_aboutUl__dc+d6">
-            <li class="about_aboutList__Gft6r">
+        <div className={styles.aboutCon}>
+          <h3 className={styles.h3Title}>About me:</h3>
+          <ul className={styles.aboutUl}>
+            <li className={styles.aboutList}>
               My name is Maayan and I learned Full Stack development at HackerU
               college and this is my graduation project.
             </li>
-            <li class="about_aboutList__Gft6r">
+            <li className={styles.aboutList}>
               For my final project I wanted to do an eCommerce site cause in the
               past I manages those kind of sites and I wanted to build an
               eCommerce site on my own.
             </li>
-            <li class="about_aboutList__Gft6r">
+            <li className={styles.aboutList}>
               I decided to built an eCommerce site about clothes and add
               features I learn in the class and features I learned of my own to
               make the site functionality as similar to real eCommerce sites.
