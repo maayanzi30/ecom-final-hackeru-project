@@ -1,0 +1,314 @@
+.header {
+  padding: 0;
+  align-items: center;
+  top: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  height: 100%;
+  background: black;
+  height: 3.75rem;
+}
+.liSearch {
+  display: flex;
+}
+.navbarLogo {
+  color: #eee;
+
+  cursor: pointer;
+  text-decoration: none;
+  font-size: 2rem;
+}
+
+.navTitle {
+  align-self: center;
+}
+.nav {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  height: 100%;
+  align-items: center;
+  padding: 0 2rem;
+}
+
+.navMenu {
+  display: flex;
+  width: 70vw;
+  justify-content: flex-start;
+}
+
+.navIcons {
+  display: flex;
+  margin: 0;
+  position: relative;
+}
+
+.fatimes,
+.fabars,
+.fasearch {
+  color: white;
+}
+
+.navItem {
+  display: flex;
+  align-items: center;
+}
+
+.navLinks {
+  text-decoration: none;
+  color: #eee;
+  font-size: 1.5rem;
+  padding: 0.5rem 1rem;
+}
+
+.menuIcon {
+  display: none;
+}
+.icon {
+  list-style: none;
+  padding: 0 1rem;
+  align-self: center;
+  text-decoration: none;
+  color: #eee;
+  font-size: 1rem;
+}
+.logOutIcon {
+  list-style: none;
+  align-self: center;
+}
+.navLinksMobile {
+  display: none;
+}
+.logOutIcon a {
+  margin: 0;
+  padding: 0 1rem;
+}
+.end {
+  padding-right: 0;
+}
+.cartWrapper {
+  text-align: center;
+  position: absolute;
+  top: 3rem;
+  font-size: 1rem;
+  font-weight: bold;
+  border-radius: 50%;
+  width: 1.5rem;
+  height: 1.5rem;
+  background: #fff0;
+  border: 3px solid white;
+  color: white;
+}
+.wrapSearch {
+  display: flex;
+  align-items: center;
+  padding: 0 1rem;
+}
+.searchForm {
+  align-self: center;
+  text-align: center;
+  position: absolute;
+  top: 4.5rem;
+  z-index: 100;
+}
+.inputField {
+  height: 3rem;
+  font-size: 1.3rem;
+  text-align: center;
+  width: 100%;
+}
+
+.form {
+  display: flex;
+  justify-content: center;
+}
+@media screen and (max-width: 960px) {
+  .nav {
+    padding: 0 3rem;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+  .navMenu {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+    top: 60px;
+    left: 0;
+    opacity: 1;
+    transition: all 0.5s ease;
+    z-index: 9999;
+    background-color: #fff;
+  }
+  .logOutIcon {
+    display: none;
+  }
+  .navIcons {
+    display: flex;
+    margin: 0;
+    position: relative;
+  }
+  .navLinksMobile {
+    display: block;
+  }
+
+  .navMenu .active {
+    background: white;
+    left: 0;
+    opacity: 1;
+    transition: all 0.5s ease;
+    z-index: 1;
+
+    top: 3.5rem;
+  }
+
+  .navLinks {
+    text-align: center;
+    width: 100%;
+    display: table;
+    color: black;
+    font-weight: 600;
+    margin: 2.5rem;
+  }
+
+  .navLinks:hover {
+    background-color: black;
+    border-radius: 0;
+  }
+
+  .navbarLogo {
+    position: absolute;
+    top: 0rem;
+    left: 0;
+    transform: translate(25%, 50%);
+  }
+
+  .menuIcon {
+    display: block;
+    position: absolute;
+    top: -0.4rem;
+    right: 0;
+    transform: translate(-100%, 60%);
+    font-size: 1.8rem;
+    cursor: pointer;
+  }
+  .icon {
+    display: block;
+    padding: 0;
+  }
+  .header {
+    position: fixed;
+    top: 0;
+    z-index: 9999;
+    width: 100%;
+  }
+  .navIcons li {
+    min-width: 4rem;
+    justify-content: center;
+    padding: 0 !important;
+    margin: 0 !important;
+  }
+  .navIcons li a {
+    margin: 0 !important;
+    padding: 0 !important;
+    color: #fff;
+    background: black;
+  }
+  .cartWrapper {
+    top: 1rem;
+  }
+  .navIcons li a svg {
+    margin: 0 auto !important;
+    padding: 0 !important;
+  }
+  .searchForm {
+    position: fixed;
+    top: 3.5rem;
+    width: 100%;
+    left: 0;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .nav {
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+  }
+  .cartWrapper {
+    top: 1.6rem;
+  }
+  .navMenu {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+    top: 60px;
+    left: 0;
+    opacity: 1;
+    transition: all 0.5s ease;
+    z-index: 9999;
+    background-color: #fff;
+  }
+  .logOutIcon {
+    display: none;
+  }
+  .navIcons li {
+    min-width: 3rem;
+  }
+  .navLinksMobile {
+    display: block;
+  }
+
+  .navMenu .active {
+    background: white;
+    left: 0;
+    opacity: 1;
+    transition: all 0.5s ease;
+    z-index: 1;
+
+    top: 3.5rem;
+  }
+
+  .navLinks {
+    text-align: center;
+    width: 100%;
+    display: table;
+    margin: 1.5rem;
+  }
+
+  .navLinks:hover {
+    background-color: black;
+    border-radius: 0;
+  }
+
+  .navbarLogo {
+    font-size: 1.5rem;
+  }
+
+  .menuIcon {
+    display: block;
+    position: absolute;
+    top: 0;
+    transform: translate(-50%, 60%);
+    font-size: 1.5rem;
+    cursor: pointer;
+  }
+  .icon {
+    display: block;
+    padding: 0;
+    margin: 0.8rem;
+  }
+  .header {
+    position: fixed;
+    top: 0;
+    z-index: 9999;
+    width: 100%;
+  }
+}

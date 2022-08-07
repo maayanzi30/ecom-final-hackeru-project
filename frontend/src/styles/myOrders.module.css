@@ -1,0 +1,264 @@
+.table {
+  width: 80%;
+  margin: 2em auto;
+  border: 0.3em solid black;
+  border-collapse: collapse;
+}
+
+.tableHeader {
+  width: 20%;
+  background-color: #95a5a6;
+  font-size: 1rem;
+  text-transform: uppercase;
+  letter-spacing: 0.03em;
+}
+.tableRow {
+  background-color: #ffffff;
+  box-shadow: 0px 0px 9px 0px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+.tableTitle {
+  background-color: #95a5a6;
+  font-size: 1.2em;
+  text-transform: uppercase;
+  letter-spacing: 0.03em;
+  padding: 0.2em;
+  width: 25%;
+  height: 4rem;
+}
+
+.tableData {
+  width: 25%;
+  font-size: 1.5em;
+  height: 5rem;
+}
+.orderImg {
+  width: 60%;
+}
+.orderSubHeader {
+  font-size: 2em;
+  text-align: center;
+}
+.tableBtn {
+  text-align: center;
+}
+
+input[type="text"] {
+  font-size: 1.5rem;
+  width: 100%;
+}
+input[type="number"] {
+  font-size: 1.5rem;
+  width: 100%;
+}
+input#images {
+  font-size: 1.5rem;
+  width: 100%;
+}
+select {
+  font-size: 1.5rem;
+}
+.price {
+  width: 10%;
+}
+
+.editProductBtn {
+  background: #000;
+  color: white;
+  padding: 1rem 1.2rem;
+  margin: 2em 2rem;
+  font-size: 1rem;
+  letter-spacing: 0.1rem;
+  text-transform: uppercase;
+  font-weight: 600;
+  border-radius: 2.5rem;
+  cursor: pointer;
+  width: 10%;
+}
+.data {
+  height: 5rem;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  align-content: center;
+  flex-direction: column;
+}
+.ordersButton {
+  background: #000;
+  color: white;
+  padding: 1rem 1.2rem;
+  font-size: 1rem;
+  letter-spacing: 0.1rem;
+  text-transform: uppercase;
+  font-weight: 600;
+  border-radius: 2.5rem;
+  cursor: pointer;
+  width: 100%;
+}
+.tableData:nth-last-col {
+  font-size: 1px;
+}
+.userEditBtn {
+  background: #000;
+  color: white;
+  padding: 0.5rem;
+  font-size: 1rem;
+  letter-spacing: 0.1rem;
+  text-transform: uppercase;
+  font-weight: 600;
+  border-radius: 2.5rem;
+  cursor: pointer;
+  width: 100%;
+}
+@media (max-width: 280px) {
+  .productTitle {
+    font-size: 2rem;
+  }
+  .table .tableHeader {
+    display: none;
+  }
+  .table {
+    display: block;
+    width: 95%;
+    margin: 0 auto;
+  }
+  .table,
+  .table tbody,
+  .table .tableRow,
+  .table .tableData {
+    display: block;
+    width: 95%;
+    margin: 0 auto;
+  }
+  .table .tableRow {
+    margin-bottom: 1rem;
+    height: 22rem;
+    width: 100%;
+    margin: 0;
+  }
+  .table .tableData {
+    text-align: right;
+    position: relative;
+    display: flex;
+    justify-content: flex-end;
+    font-size: 0.8rem;
+    align-items: center;
+    padding: 0.5rem 0;
+  }
+  .table .tableData::before {
+    content: attr(data-label);
+    position: absolute;
+    left: 0;
+    width: 50%;
+    height: 100%;
+    font-size: 0.8rem;
+    overflow: hidden;
+    white-space: pre;
+    font-weight: bold;
+    text-align: left;
+    align-items: center;
+    display: flex;
+  }
+
+  .btnMain {
+    display: flex;
+    justify-content: center;
+  }
+  .btn {
+    margin: 1rem;
+    font-size: 2rem;
+  }
+  .icon {
+    font-size: 1.25rem;
+  }
+  .tableData:nth-child(1) {
+    font-size: 0.9rem;
+    font-weight: bold;
+  }
+
+  .userEditBtn {
+    font-size: 0.8rem;
+  }
+  .tableBody {
+    width: 100%;
+    margin: 0;
+  }
+}
+@media (max-width: 625px) {
+  .productTitle {
+    font-size: 2.5rem;
+  }
+  .table .tableHeader {
+    display: none;
+  }
+  .table {
+    display: block;
+    width: 95%;
+    margin: 0 auto;
+  }
+  .table,
+  .table tbody,
+  .table .tableRow,
+  .table .tableData {
+    display: block;
+    width: 95%;
+    margin: 0 auto;
+  }
+  .table .tableRow {
+    margin-bottom: 1rem;
+    height: 26rem;
+    width: 100%;
+    margin: 0;
+  }
+  .table .tableData {
+    text-align: right;
+    position: relative;
+    display: flex;
+    justify-content: flex-end;
+    font-size: 1.3rem;
+    align-items: center;
+    padding: 0.5rem 0;
+  }
+  .table .tableData::before {
+    content: attr(data-label);
+    position: absolute;
+    left: 0;
+    width: 50%;
+    height: 100%;
+    font-size: 1rem;
+    overflow: hidden;
+    white-space: pre;
+    font-weight: bold;
+    text-align: left;
+    align-items: center;
+    display: flex;
+  }
+
+  .btnMain {
+    display: flex;
+    justify-content: center;
+  }
+  .btn {
+    margin: 1rem;
+    font-size: 2rem;
+  }
+  .icon {
+    font-size: 1.25rem;
+  }
+  .tableData:nth-child(1) {
+    font-size: 1.2rem;
+    font-weight: bold;
+  }
+  .tableBody {
+    width: 100%;
+    margin: 0;
+  }
+}
+@media (min-width: 626px) {
+  .tableData {
+    font-size: 1.3rem;
+  }
+  .userEditBtn {
+    font-size: 1rem;
+  }
+}

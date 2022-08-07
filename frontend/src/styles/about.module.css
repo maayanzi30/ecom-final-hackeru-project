@@ -1,0 +1,77 @@
+.section {
+  width: 80%;
+  margin: 0 auto;
+}
+
+.aboutCon {
+  border: 0.5rem solid black;
+  margin-bottom: 5rem;
+}
+
+.h3Title {
+  font-size: 1.6rem;
+  padding: 1rem;
+  background-color: #95a5a6;
+  text-align: center;
+  border-bottom: 0.5rem solid black;
+}
+.h4Title {
+  background: white;
+  font-size: 1.5rem;
+  padding: 0.3rem 2rem;
+}
+.aboutUl {
+  height: fit-content;
+  padding: 1.5rem 2rem;
+  border: 1px solid black;
+}
+.aboutList,
+.aboutBuiltWith {
+  font-size: 1.5rem;
+}
+.aboutBuiltWith {
+  text-align: center;
+  list-style: none;
+}
+
+.aboutBuiltWithCon {
+  margin-bottom: 0;
+}
+@media (min-width: 280px) {
+  .section {
+    width: 95%;
+  }
+  .h3Title {
+    font-size: 1.4rem;
+  }
+  .h4Title {
+    font-size: 1.4rem;
+  }
+  .aboutList,
+  .aboutBuiltWith {
+    font-size: 1.3rem;
+  }
+  .aboutCon {
+    border: 0.3rem solid black;
+    margin-bottom: 3rem;
+  }
+}
+@media (min-width: 625px) {
+  .section {
+    width: 90%;
+  }
+  .h3Title {
+    font-size: 1.5rem;
+  }
+  .h4Title {
+    font-size: 1.5rem;
+  }
+  .aboutList,
+  .aboutBuiltWith {
+    font-size: 1.4rem;
+  }
+  .aboutCon {
+    border: 0.5rem solid black;
+    margin-bottom: 4rem;
+  }
+}

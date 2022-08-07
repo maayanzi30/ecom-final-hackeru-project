@@ -1,0 +1,54 @@
+h1 {
+  padding: 5rem 0;
+}
+.image {
+  display: flex;
+  position: relative;
+
+  width: 30%;
+  margin: 0 auto;
+}
+
+.content {
+  font-size: 2rem;
+  text-align: center;
+  position: relative;
+}
+.btnWrapper {
+  text-align: center;
+  position: relative;
+}
+
+@media (min-width: 280px) {
+  .image {
+    display: flex;
+    position: relative;
+    justify-content: center;
+    width: 80%;
+    margin: 1rem auto;
+  }
+  .image svg {
+    height: 500px;
+  }
+  .content {
+    font-size: 1.5rem;
+    text-align: center;
+    position: relative;
+
+    margin-bottom: 3rem;
+  }
+}
+@media (min-width: 400px) {
+  .image {
+    margin: 2rem auto;
+  }
+  .content {
+    margin: 2rem;
+  }
+}
+
+@media (max-width: 600px) {
+  .image svg {
+    height: 300px;
+  }
+}

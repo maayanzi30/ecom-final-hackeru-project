@@ -1,0 +1,32 @@
+.paypal {
+  text-align: center;
+  padding: 3rem;
+}
+.paymentTitle {
+  font-size: 3rem;
+}
+@media (min-width: 280px) {
+  .paypal {
+    width: 90%;
+    padding: 0;
+    margin: 0 auto;
+  }
+}
+@media (min-width: 500px) {
+  .paypal {
+    width: 60%;
+    margin: 3rem auto;
+  }
+}
+@media (min-width: 800px) {
+  .paypal {
+    width: 60%;
+  }
+}
+@media (min-width: 1024px) {
+  .paypal {
+    width: 50%;
+    padding: 0;
+    margin: 8rem auto;
+  }
+}

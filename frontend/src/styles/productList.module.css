@@ -1,0 +1,201 @@
+.table {
+  width: 80%;
+  margin: 2rem auto;
+  border: 0.3rem solid black;
+  border-collapse: collapse;
+}
+.tableHeader {
+  width: 20%;
+  background-color: #95a5a6;
+  font-size: 1rem;
+  text-transform: uppercase;
+  letter-spacing: 0.03rem;
+}
+.tableRow {
+  background-color: #ffffff;
+  box-shadow: 0px 0px 9px 0px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+.tableTitle {
+  background-color: #95a5a6;
+  font-size: 1.2rem;
+  text-transform: uppercase;
+  letter-spacing: 0.03rem;
+  padding: 0.2rem;
+  width: 12.5%;
+  align-items: center;
+  justify-content: space-evenly;
+  display: flex;
+}
+.tableRow td {
+  width: 12.5%;
+}
+.tableData {
+  width: 25%;
+  font-size: 1.5rem;
+  text-align: center;
+}
+.orderImg {
+  width: 60%;
+}
+.orderSubHeader {
+  font-size: 2rem;
+  text-align: center;
+}
+.buttonDiv {
+  text-align: center;
+}
+
+.img {
+  max-width: 3rem;
+}
+.icon {
+  font-size: 1.5rem;
+  margin: 1rem;
+}
+.tableBody {
+  display: grid;
+}
+.addProduct {
+  margin: 0 1rem;
+}
+.productButton {
+  padding: 0.5rem;
+  font-size: 1rem;
+  margin: 1rem;
+  background: #000;
+  color: white;
+  font-size: 1rem;
+  letter-spacing: 0.1rem;
+  text-transform: uppercase;
+  font-weight: 600;
+  border-radius: 2.5rem;
+  cursor: pointer;
+  width: fit-content;
+}
+@media (min-width: 280px) {
+  .addProduct {
+    margin: 0;
+  }
+
+  .tableHeader {
+    display: none;
+  }
+  .table,
+  .tableRow,
+  .tableData {
+    display: block;
+    width: 90%;
+    margin: 0 auto;
+  }
+
+  .tableRow {
+    margin-bottom: 1rem;
+    height: fit-content;
+    width: 100%;
+    margin: 0;
+  }
+  .tableData {
+    text-align: right;
+    position: relative;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 0.5rem 0;
+    font-size: 1.3rem;
+    font-weight: bold;
+  }
+  .tableData::before {
+    content: attr(data-label);
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    font-size: 1rem;
+    overflow: hidden;
+    white-space: pre;
+    font-weight: bold;
+    text-align: left;
+    align-items: center;
+    display: flex;
+  }
+
+  .btnContainer {
+    display: flex;
+    justify-content: space-evenly;
+    margin: 0 auto;
+  }
+
+  .tableData:nth-child(1) {
+    font-size: 1.2rem;
+    font-weight: bold;
+  }
+
+  .icon {
+    font-size: 1.7rem;
+  }
+}
+@media (min-width: 750px) {
+  .table {
+    display: grid;
+    width: 100%;
+  }
+  .tableBody,
+  .tableHeader {
+    display: grid;
+    justify-items: end;
+    align-items: center;
+    align-content: space-between;
+    width: 100%;
+  }
+
+  .table,
+  .tableRow,
+  .tableData {
+    display: block;
+    width: 90%;
+  }
+
+  .tableRow {
+    display: flex;
+    width: 100%;
+    margin: 0 auto;
+  }
+
+  .tableData {
+    text-align: center;
+  }
+  .tableData:nth-child(1) {
+    width: 12%;
+  }
+  .tableData::before {
+    display: none;
+  }
+  .icon {
+    margin: 0.5rem;
+  }
+
+  .addProduct {
+    margin: 0;
+  }
+
+  .productButton {
+    font-size: 1.5rem;
+    margin-bottom: 2rem;
+  }
+}
+@media (max-width: 800px) {
+  .tableTitle {
+    font-size: 0.9rem;
+    font-weight: 800;
+  }
+
+  .tableData {
+    font-size: 1.1rem;
+  }
+}
+@media (max-width: 750px) {
+  .tableRow td {
+    width: 90% !important;
+  }
+}

@@ -1,0 +1,127 @@
+.card {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 1rem;
+  overflow: hidden;
+  background: white;
+  border: 2px solid black;
+}
+.mainImg {
+  width: 70%;
+  margin: 0 auto;
+}
+.imgCard {
+  width: 100%;
+}
+.card_name {
+  top: 0 auto;
+  width: 100%;
+  background-color: black;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.5rem;
+}
+.card_name h3 {
+  display: flex;
+  text-align: center;
+}
+.card__precis {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  transition: 0.5s;
+  align-items: center;
+  background: #d7d4d8;
+}
+
+.card:hover .card__precis {
+  z-index: 1;
+  width: 100%;
+}
+.card__icon {
+  font-size: 2rem;
+  color: black;
+}
+
+.card__icon .heart:hover {
+  color: red;
+}
+.cardPreciBefore {
+  font-size: 1.2rem;
+  position: relative;
+  padding-bottom: 0.5rem;
+  color: black;
+}
+
+.cardPreciBefore:after {
+  content: "";
+  position: absolute;
+  border-top: 3px solid red;
+  top: 0.8rem;
+  left: 4.5rem;
+  width: 3.7rem;
+  transform: rotate(150deg);
+  transform-origin: 0% 0%;
+  color: black;
+}
+.cardPreciNow {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: black;
+}
+.btnBlock {
+  display: none;
+}
+@media (min-width: 280px) {
+  .card_name {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    align-content: center;
+    flex-direction: column;
+  }
+
+  .card__precis {
+    height: 2.2rem;
+    padding: 0 0.5rem;
+  }
+
+  .card__icon {
+    font-size: 1.7rem;
+    display: flex;
+  }
+
+  .cardPreciBefore {
+    font-size: 1.2rem;
+    padding: 0.5rem;
+  }
+
+  .cardPreciBefore:after {
+    top: 0.6rem;
+    left: 3.5rem;
+    width: 2.7rem;
+  }
+  .cardPreciNow {
+    font-size: 1.4rem;
+    font-weight: bold;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    align-content: center;
+  }
+  .cardPrice {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+  }
+}
+
+@media (min-width: 1024px) {
+  .cardPreciBefore {
+    font-size: 1.5rem;
+  }
+}

@@ -1,0 +1,17 @@
+.alert {
+  font-size: 2rem;
+  font-weight: 100;
+  letter-spacing: 3px;
+  padding-top: 5px;
+  color: #fcfcfc;
+  padding-bottom: 5px;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+
+.errorMessage {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: green;
+  text-align: center;
+}

@@ -1,0 +1,117 @@
+.stepCard {
+  margin: 2rem auto;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  max-width: 26.5rem;
+  background-color: #fff;
+  border-radius: 0.6rem;
+  box-shadow: 0 6rem 1.25rem 0 rgba(153, 153, 153, 0.25);
+  padding: 0.75rem;
+  width: 90%;
+}
+.userBox {
+  display: flex;
+  justify-content: space-between;
+}
+.cardImage {
+  border-radius: 0.5rem;
+  overflow: hidden;
+  padding-bottom: 65%;
+  background-image: url("../../public/images/shopping.png");
+  background-repeat: no-repeat;
+  background-size: 60%;
+  background-position-x: center;
+  position: relative;
+}
+
+.cardForm {
+  padding: 2rem 1rem;
+}
+
+.input {
+  display: flex;
+  flex-direction: column-reverse;
+  position: relative;
+  padding-top: 1.5rem;
+}
+.input + .input {
+  margin-top: 1.5rem;
+}
+
+.inputLabel {
+  color: black;
+  font-weight: 700;
+  padding-right: 1rem;
+}
+
+.inputField {
+  border: 0;
+  z-index: 1;
+  background-color: transparent;
+  border-bottom: 2px solid #eee;
+  font: inherit;
+  font-size: 1.125rem;
+  padding: 0.25rem 0;
+}
+.inputField:focus,
+.inputField:valid {
+  outline: 0;
+  border-bottom-color: black;
+  position: relative;
+  bottom: 0.6rem;
+}
+.inputField:focus + .inputLabel,
+.inputField:valid + .inputLabel {
+  color: black;
+  transform: translateY(-1.5rem);
+}
+
+@media (min-width: 280px) {
+  .cardTitle {
+    font-size: 2rem;
+    padding-top: 2rem;
+    padding-bottom: 3rem;
+    text-align: center;
+  }
+  .cardImage {
+    background-position-y: 0;
+    margin: 0;
+    padding: 0rem;
+    padding-bottom: 70%;
+  }
+  .stepCard {
+    position: relative;
+    bottom: 0;
+  }
+  .inputLabel {
+    font-size: 1.2rem;
+  }
+
+  .inputField {
+    width: 75%;
+  }
+  .cardForm {
+    padding: 2rem;
+  }
+}
+@media (min-width: 500px) {
+  .cardTitle {
+    font-size: 3rem;
+    padding-bottom: 2rem;
+  }
+  .cardImage {
+    top: 2rem;
+  }
+  .cardForm {
+    padding: 2rem;
+    width: 65%;
+    margin: 0 auto;
+  }
+}
+@media (min-width: 700px) {
+  .cardTitle {
+    font-size: 3rem;
+    padding-bottom: 2rem;
+  }
+}

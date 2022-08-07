@@ -1,0 +1,271 @@
+.table {
+  width: 80%;
+  margin: 2rem auto;
+  border: 0.3rem solid black;
+  border-collapse: collapse;
+}
+.tableHeader {
+  width: 20%;
+  background-color: #95a5a6;
+  font-size: 1rem;
+  text-transform: uppercase;
+  letter-spacing: 0.03rem;
+}
+.tableRow {
+  background-color: #ffffff;
+  box-shadow: 0px 0px 9px 0px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+.tableTitle {
+  background-color: #95a5a6;
+  font-size: 1.2rem;
+  text-transform: uppercase;
+  letter-spacing: 0.03rem;
+  padding: 0.2rem;
+  width: 15%;
+  align-items: center;
+  justify-content: space-evenly;
+  display: flex;
+}
+.tableRow td {
+  width: 12.5%;
+}
+.tableData {
+  width: 25%;
+  font-size: 1.5rem;
+  text-align: center;
+}
+
+.buttonDiv {
+  text-align: center;
+}
+
+.tableBody {
+  display: grid;
+}
+.addProduct {
+  margin: 0 1rem;
+}
+.productButton {
+  padding: 0.5rem;
+  font-size: 1rem;
+  margin: 1rem;
+  background: #000;
+  color: white;
+  font-size: 1rem;
+  letter-spacing: 0.1rem;
+  text-transform: uppercase;
+  font-weight: 600;
+  border-radius: 2.5rem;
+  cursor: pointer;
+  width: fit-content;
+}
+.productInput {
+  border: 2px solid black;
+  border-radius: 1rem;
+  font-size: 1.5rem;
+  width: 100%;
+  padding-left: 1rem;
+  height: 35px;
+}
+
+.editProductBtn {
+  background: #000;
+  color: white;
+  padding: 1rem 1.2rem;
+  margin: 3.5rem;
+  font-size: 1.5rem;
+  letter-spacing: 0.1rem;
+  text-transform: uppercase;
+  font-weight: 600;
+  border-radius: 2.5rem;
+  cursor: pointer;
+  width: 30%;
+}
+.buttonWrapper {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin: 2rem auto;
+  width: 50%;
+}
+.inputUpload {
+  display: block !important;
+}
+.btnUpload {
+  background-color: #95a5a6;
+  padding: 0.625rem 1.25rem;
+  border-radius: 0.625rem;
+}
+.borderImage {
+  border: none;
+  border-radius: 0;
+  display: none;
+}
+input[type="text"] {
+  font-size: 1rem !important;
+  width: 100% !important;
+}
+@media (min-width: 280px) {
+  .addProduct {
+    margin: 0;
+  }
+
+  .tableHeader {
+    display: none;
+  }
+
+  .tableRow {
+    margin-bottom: 1rem;
+    height: fit-content;
+    width: 100%;
+    margin: 0;
+  }
+  .tableData {
+    text-align: right;
+    position: relative;
+    align-items: center;
+    padding: 0.5rem 0;
+    font-size: 1.3rem;
+    font-weight: bold;
+    display: flex;
+    flex-direction: column;
+  }
+  .tableData::before {
+    content: attr(data-label);
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    font-size: 1rem;
+    overflow: hidden;
+    white-space: pre;
+    font-weight: bold;
+    text-align: left;
+    align-items: center;
+    display: flex;
+  }
+
+  .btnContainer {
+    display: flex;
+    justify-content: space-evenly;
+    margin: 0 auto;
+    font-size: 26px;
+    padding: 1rem;
+  }
+
+  .icon {
+    font-size: 1.7rem;
+  }
+  .productEditLabel {
+    padding: 0.5rem;
+    text-align: left;
+    width: 100%;
+    font-size: 1.3rem;
+  }
+  .productInput {
+    width: 100%;
+    font-size: 1rem;
+  }
+  .editProductBtn {
+    padding: 0.5rem;
+    margin: 0 auto;
+    font-size: 1rem;
+    width: 30%;
+  }
+  .buttonWrapper {
+    width: 100%;
+  }
+}
+
+@media (min-width: 750px) {
+  .table {
+    display: grid;
+    width: 95%;
+  }
+  .tableBody,
+  .tableHeader {
+    display: grid;
+    justify-items: end;
+    align-items: center;
+    align-content: space-between;
+    width: 100%;
+  }
+
+  .tableRow {
+    display: flex;
+    width: 100%;
+    margin: 0 auto;
+  }
+  select {
+    max-width: 100%;
+    border: 1px solid;
+  }
+  .tableRow td {
+    margin-right: 0.5rem;
+    padding: 0;
+    justify-content: center;
+  }
+  .tableData {
+    text-align: center;
+    padding: 1rem;
+  }
+
+  .tableData::before {
+    display: none;
+  }
+  .icon {
+    margin: 0.5rem;
+  }
+
+  .addProduct {
+    margin: 0;
+  }
+
+  .productButton {
+    font-size: 1.5rem;
+    margin-bottom: 2rem;
+  }
+  .mailTo {
+    font-size: 0.8rem;
+  }
+  .productEditLabel {
+    display: none;
+  }
+  .productInput {
+    font-size: 1rem;
+    width: 100%;
+  }
+  .btnUpload {
+    background-color: #95a5a6;
+    padding: 0.2rem;
+    border-radius: 0.625rem;
+  }
+}
+@media (max-width: 800px) {
+  .tableTitle {
+    font-size: 0.9rem;
+    font-weight: 800;
+  }
+  .tableData {
+    font-size: 1.1rem;
+  }
+}
+@media (max-width: 750px) {
+  .tableRow td {
+    width: 100% !important;
+    display: flex;
+    padding: 0.5rem;
+    justify-content: flex-start;
+  }
+
+  .tableData::before {
+    display: none;
+  }
+  select {
+    width: 100% !important;
+    display: flex;
+    padding: 0.5rem;
+    justify-content: flex-start;
+  }
+}

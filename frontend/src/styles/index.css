@@ -1,0 +1,103 @@
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --mainColor: #29335c;
+  --mainColorLight: #5767aa;
+  --secondaryColor: #db2b39;
+  --textColor: #eee;
+  --bgColor: linear-gradient(
+    90deg,
+    rgba(24, 24, 24, 1) 0%,
+    rgba(103, 103, 105, 1) 47%,
+    rgba(24, 24, 24, 1) 100%
+  );
+  --btnColor: #8064a2;
+}
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 3.75rem;
+  padding: 0 2rem;
+  background: var(--bgColor);
+  color: var(--textColor);
+}
+nav a {
+  margin: 0 2rem;
+  color: var(--textColor);
+  text-decoration: none;
+  font-size: 1.2rem;
+}
+.navIcons a {
+  margin: 0 0.5rem;
+}
+nav a:hover {
+  color: var(--secondaryColor);
+}
+
+header .nav-btn {
+  padding: 5px;
+  cursor: pointer;
+  background: transparent;
+  border: none;
+  outline: none;
+  color: var(--textColor);
+  display: none;
+  visibility: hidden;
+  opacity: 0;
+  font-size: 1.8rem;
+}
+body {
+  background: var(--bgColor);
+}
+h1.title-shop {
+  text-align: center;
+  background-color: #fff;
+  margin: 0;
+}
+h1 {
+  text-align: center;
+  margin: 2em;
+}
+
+@media only screen and (max-width: 1023px) {
+  header .nav-btn {
+    visibility: visible;
+    opacity: 1;
+    display: block;
+  }
+
+  header nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1.5rem;
+    background: var(--bgColor);
+    transition: 1s;
+    transform: translateY(-100vh);
+    z-index: 1;
+  }
+  header .responsive_nav {
+    transform: none;
+  }
+  nav .nav-close-btn {
+    position: absolute;
+    top: 2rem;
+    right: 2rem;
+  }
+  nav a {
+    font-size: 1.2rem;
+  }
+}

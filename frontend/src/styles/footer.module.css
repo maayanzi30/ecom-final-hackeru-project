@@ -1,0 +1,152 @@
+.footer {
+  color: #bbb;
+  line-height: 1.5;
+  margin-top: auto;
+  bottom: 0;
+  width: 100%;
+  padding: 0.625rem 0.625rem 0px 0.625rem;
+  background: black;
+}
+.footerWrapper {
+  display: flex;
+  justify-content: space-evenly;
+}
+.ftTitle {
+  font-size: 2.5rem;
+  padding-bottom: 2rem;
+}
+.footerLink {
+  text-decoration: none;
+  color: #eee;
+  font-size: 2rem;
+  padding: 2rem;
+}
+
+.ftTitle {
+  color: #fff;
+  font-size: 3rem;
+  padding-bottom: 0.625rem;
+}
+.container {
+  flex: 1;
+}
+
+.ftMain {
+  padding: 1.25rem 1.875rem;
+  display: flex;
+  flex-wrap: wrap;
+  border-bottom: 3px solid black;
+}
+.footerLinks {
+  display: flex;
+  justify-content: space-around;
+  list-style: none;
+  padding-left: 0;
+  width: 70%;
+  margin: 0 auto;
+}
+.ftMainItem {
+  padding: 1.25rem;
+  min-width: 12.5rem;
+}
+
+.ftSocial {
+  padding: 2rem;
+}
+.ftSocialList {
+  display: flex;
+  justify-content: center;
+  border-top: 1px #777 solid;
+  padding-top: 1.25rem;
+  list-style: none;
+}
+.ftSocialList li {
+  margin: 0.5rem;
+  font-size: 1.25rem;
+}
+.ftLegal {
+  padding: 0.9375rem 1.875rem;
+}
+.ftLegalList {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+}
+.ftLegalList li {
+  margin: 0.125rem 0.625rem;
+  white-space: nowrap;
+}
+.ftLegalList li:nth-last-child(2) {
+  flex: 1;
+}
+.footerList {
+  display: flex;
+  justify-content: space-around;
+  list-style: none;
+  padding-left: 0;
+}
+
+@media (min-width: 280px) {
+  .footer {
+    padding: 0;
+  }
+  .ftTitle {
+    font-size: 1.2rem;
+    padding-top: 1rem;
+  }
+
+  .ftMain {
+    padding: 0;
+    justify-content: center;
+    padding-bottom: 0.5rem;
+  }
+  .ftMainItem {
+    padding: 0;
+  }
+  .footerLink {
+    padding: 0;
+    font-size: 1rem;
+  }
+  .footerLinks {
+    width: 100%;
+  }
+  .ftLegal {
+    padding: 0.3rem 1rem;
+  }
+  .ftLegalList {
+    justify-content: center;
+  }
+}
+@media (min-width: 625px) {
+  .ftTitle {
+    font-size: 1.7rem;
+    text-align: center;
+    padding: 1rem;
+  }
+
+  .ftMain {
+    padding: 0;
+  }
+  .ftMainItem {
+    padding: 0;
+    width: 100%;
+  }
+  .footerLink {
+    padding-bottom: 1rem;
+    font-size: 1.3rem;
+  }
+  .footerLinks {
+    width: 80%;
+  }
+  .ftLegal {
+    padding: 0.3rem 1rem;
+  }
+  .ftLegalList {
+    justify-content: center;
+  }
+}
+@media (min-width: 1024px) {
+  .footerLinks {
+    width: 60%;
+  }
+}

@@ -1,0 +1,194 @@
+.form {
+  padding: 2rem 0;
+}
+.wrapMobileProfileMenu {
+  display: none;
+}
+.profileBox {
+  border-radius: 0.6rem;
+  margin: 0 auto;
+  width: 60%;
+  height: fit-content;
+  background: #00bcd4;
+  margin: 0 auto;
+  box-shadow: 0 0.94rem 1.56rem rgba(0, 0, 0, 0.6);
+  padding: 2.5rem;
+}
+
+.profileBox h2 {
+  margin: 0 0 1.8rem;
+  padding: 0;
+  color: #fff;
+  text-align: center;
+}
+.editDetails {
+  text-align: center;
+  color: white;
+  margin-bottom: 4rem;
+  font-size: 3rem;
+}
+.userProfileBox {
+  justify-content: space-between;
+  width: 60%;
+  display: flex;
+  justify-items: start;
+  align-items: center;
+  align-content: center;
+  margin: 0 auto;
+}
+
+.userLabel {
+  position: absolute;
+  bottom: 4rem;
+  left: 0;
+  font-size: 1rem;
+  color: #fff;
+}
+
+.profileLabel {
+  font-size: 2rem;
+}
+
+.profileInput {
+  font-size: 2rem;
+  border: 2px solid black;
+  border-radius: 1rem;
+}
+
+.profileWrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.profileBtn {
+  background: #000;
+  color: white;
+  padding: 1rem 1.2rem;
+  margin-top: 3.5rem;
+  font-size: 1.5rem;
+  letter-spacing: 0.1rem;
+  text-transform: uppercase;
+  font-weight: 600;
+  border-radius: 2.5rem;
+  cursor: pointer;
+  width: 100%;
+}
+
+@media (min-width: 280px) {
+  .form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .profileBox {
+    width: 90%;
+    padding: 0.5rem;
+  }
+
+  .profileBox h2 {
+    margin: 0 0 1.8rem;
+    padding: 0;
+    color: #fff;
+    text-align: center;
+  }
+  .userProfileBox {
+    align-items: flex-start;
+    justify-content: flex-start;
+    margin: 0.5rem;
+    width: fit-content;
+    flex-direction: column;
+  }
+
+  .editDetails {
+    font-size: 2rem;
+    margin: 2rem;
+  }
+
+  .profileLabel {
+    font-size: 1.3rem;
+    font-weight: 600;
+    margin: 0.5rem 0;
+  }
+  .profileInput {
+    font-size: 1.3rem;
+    width: 100%;
+    padding: 0.3rem;
+  }
+
+  .profileWrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .profileBtn {
+    padding: 1rem;
+    font-size: 1rem;
+    width: 100%;
+  }
+}
+@media (min-width: 625px) {
+  .userProfileBox {
+    width: 70%;
+    flex-direction: row;
+    align-items: stretch;
+    justify-content: space-between;
+  }
+  .editDetails {
+    font-size: 2.5rem;
+    margin: 2.5rem;
+  }
+
+  .profileLabel {
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin: 0.5rem 0;
+  }
+  .profileInput {
+    width: 70%;
+  }
+
+  .profileBtn {
+    font-size: 1.5rem;
+    width: 100%;
+  }
+}
+@media (min-width: 800px) {
+  .profileBox {
+    width: 60%;
+  }
+}
+@media (min-width: 1400px) {
+  .userProfileBox {
+    width: 70%;
+    flex-direction: row;
+    align-items: stretch;
+    justify-content: space-between;
+  }
+  .editDetails {
+    font-size: 2.5rem;
+    margin: 2.5rem;
+  }
+
+  .profileLabel {
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin: 0.5rem 0;
+  }
+  .profileInput {
+    width: 70%;
+  }
+
+  .profileBtn {
+    padding: 2rem;
+    font-size: 1.5rem;
+    width: 100%;
+  }
+}
+
+@media (max-width: 960px) {
+  .wrapMobileProfileMenu {
+    display: block;
+  }
+}

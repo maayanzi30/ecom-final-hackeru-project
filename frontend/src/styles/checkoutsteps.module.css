@@ -1,0 +1,123 @@
+.checkoutNav {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  width: 100%;
+  min-width: 30rem;
+  padding: 0 2.5rem;
+}
+
+.breadcrumb {
+  display: flex;
+  border-radius: 0.6rem;
+  margin: auto;
+  text-align: center;
+  top: 50%;
+  width: 100%;
+  height: 2.5rem;
+  transform: translateY(-50%);
+  z-index: 1;
+  justify-content: center;
+}
+
+.breadcrumb__item {
+  height: 100%;
+  background-color: white;
+  border-radius: 0.4rem;
+  letter-spacing: 1px;
+  transition: all 0.3s ease;
+  text-transform: uppercase;
+  position: relative;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1rem;
+  transform: skew(-21deg);
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.26);
+  margin: 0.3rem;
+  padding: 0 2.5rem;
+  cursor: pointer;
+}
+
+.breadcrumb__item:hover {
+  background: white;
+}
+.breadcrumb__inner {
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+  z-index: 2;
+  transform: skew(21deg);
+}
+.breadcrumb__title {
+  font-size: 1rem;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+}
+a.breadcrumb__title {
+  color: black;
+  font-weight: 700;
+}
+.breadcrumb__title:hover {
+  color: white;
+}
+.checkoutNav {
+  display: flex;
+}
+
+.checkout {
+  list-style: none;
+}
+.checkoutlink {
+  color: black;
+}
+.linkDisabled {
+  color: currentColor;
+  cursor: not-allowed;
+  opacity: 0.5;
+  text-decoration: none;
+}
+
+@media (min-width: 280px) {
+  .checkoutNav {
+    padding: 0;
+    width: 100%;
+    min-width: 0;
+  }
+  .breadcrumb {
+    display: flex;
+    flex-direction: column;
+    top: 5rem;
+    height: 100%;
+    position: relative;
+    width: 100%;
+    margin: 0;
+  }
+  .breadcrumb__item {
+    position: relative;
+    height: 2rem;
+    width: 75%;
+    margin: 0.7rem auto;
+  }
+}
+@media (min-width: 500px) {
+  .checkoutNav {
+    padding: 0;
+    width: 50%;
+    min-width: 0;
+    display: flex;
+    align-items: center;
+    margin: 0 auto;
+  }
+  .breadcrumb {
+    display: flex;
+    flex-direction: row;
+    transform: translateY(0);
+    top: 0;
+    width: 100%;
+  }
+  .breadcrumb__item {
+    width: 45%;
+  }
+}

@@ -1,0 +1,49 @@
+{
+  "dependencies": {
+    "@emailjs/browser": "^3.6.2",
+    "@sendgrid/mail": "^7.7.0",
+    "bcryptjs": "^2.4.3",
+    "cors": "^2.8.5",
+    "dotenv": "^16.0.1",
+    "express": "^4.18.1",
+    "express-async-handler": "^1.2.0",
+    "font-awesome": "^4.7.0",
+    "joi": "^17.6.0",
+    "jsonwebtoken": "^8.5.1",
+    "mongoose": "^6.4.0",
+    "morgan": "^1.10.0",
+    "multer": "^1.4.5-lts.1",
+    "nanoid": "^4.0.0",
+    "nodemailer": "^6.7.7",
+    "react-google-login": "^5.2.2",
+    "react-paypal-button-v2": "~2.6.3",
+    "uuid": "^8.3.2"
+  },
+  "name": "mern-ecom-final",
+  "version": "1.0.0",
+  "description": "MERN eshop - your shopping website",
+  "main": "server.js",
+  "type": "module",
+  "scripts": {
+    "start": "node backend/server",
+    "server": "nodemon backend/server",
+    "client": "npm start --prefix frontend",
+    "dev": "concurrently \"npm run server\" \"npm run client\"",
+    "data:import": "node backend/seeder",
+    "data:destroy": "node backend/seeder -d"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "concurrently": "^7.2.2",
+    "nodemon": "^2.0.19"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/maayanzi30/ecom-new.git"
+  },
+  "bugs": {
+    "url": "https://github.com/maayanzi30/ecom-new/issues"
+  },
+  "homepage": "https://github.com/maayanzi30/ecom-new#readme"
+}
