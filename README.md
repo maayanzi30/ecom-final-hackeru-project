@@ -1,4 +1,4 @@
-eCom its a eCommerce Platform that built with the MERN stack & Redux.
+eCom is a eCommerce Platform that built with the MERN stack & Redux.
 
 Features:
 
