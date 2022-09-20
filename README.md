@@ -67,6 +67,7 @@ Features:
     <li>Server-side validations with joi.</li>
     <li>Logger - using morgan to manage http requests.</li>
   </ul>
+  </br>
   <b>Usage:</b>
   ES Modules in Node: I use ECMAScript Modules in the backend in this project. Be sure to have at least Node v14.6+ or you will need to add the "--experimental-modules" flag.
 
